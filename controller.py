@@ -25,11 +25,13 @@ print(mouseP2)
 
 time.sleep(2)
 
+#Move mouse para coordenada especifica
 pyautogui.moveTo(1009,750)
 time.sleep(1)
 pyautogui.click()
 
 time.sleep(1)
+
 pyautogui.moveTo(810,621)
 time.sleep(1)
 pyautogui.click()
@@ -37,7 +39,8 @@ pyautogui.click()
 time.sleep(1)
 pyautogui.moveTo(713,346)
 pyautogui.click()
-pyautogui.write("cortellapedras")
+
+pyautogui.write()
 
 #810,621
 #713,346

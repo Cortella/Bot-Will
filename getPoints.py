@@ -5,7 +5,8 @@ Created on Wed Jan 29 21:30:46 2020
 @author: cortella
 """
 #GET POINTS
-
+#Essa parte tem a fucao de pegar as coordenadas cartesianas da tela e salvar as determinadas 
+#
 import pyautogui
 
 x,y = pyautogui.size()
