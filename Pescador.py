@@ -6,3 +6,5 @@ Title: Pescador
 """
 import pyautogui
 
+
+

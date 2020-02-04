@@ -5,6 +5,10 @@ Created on Wed Jan 29 20:28:39 2020
 @author: cortella
 """
 
+#DEIXE O APLICATIVO NA TELA DE SELECÇÃO DE SERVIDORES
+#V1.0 -> feito para telas de resolução 1366x768
+#configure o aplicativo para ocupar toda a tela antes de rodar
+
 #define ID cortellapedras
 #define senha Dest@quemito10
 
