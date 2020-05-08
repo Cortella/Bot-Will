@@ -1,0 +1,24 @@
+class Char:
+
+    logado = False
+
+    def __init__(self, nome, level, classe):
+        self.nome = nome
+        self.level = level
+        self.classe = classe
+
+    @classmethod
+    def iniciar(self):
+        logado = True
+
+    def skillStage(self):
+
+    def moveToSpot(self):
+
+    def startAuto(self):
+
+    def stoneMonitoring(self):
+
+    def getQuest(self):
+
+    def donateXP(self):

@@ -8,5 +8,10 @@ Created on Wed Jan 29 21:30:46 2020
 #Essa parte tem a fucao de pegar as coordenadas cartesianas da tela e salvar as determinadas 
 #
 import pyautogui
+import time
 
-x,y = pyautogui.size()
+time.sleep(2)
+
+print(pyautogui.position())
+
+
