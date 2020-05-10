@@ -1,4 +1,5 @@
 import pyautogui
+from time import sleep
 class Conta:
 
     def __init__(self, login, senha, personagens):
@@ -10,36 +11,73 @@ class Conta:
         
     @property
     def login(self):
-        return __login
+        return self.__login
     
     @property
     def senha(self):
-        return __senha
+        return self.__senha
     
     @property
     def logado(self):
-        return _logado
+        return self._logado
     
     @property
     def personagens(self):
-        return personagens_
+        return self.personagens_
     
-    @_logado.setter
+    @logado.setter
     def logado(self,status):
         if isinstance(status,bool):
-            self._preco = valor
-        
+            self._logado = status
         
     def logar(self,posicoes):
+        if self.logado == False:
+            print('logando')
+            pyautogui.moveTo(posicoes['server3'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.moveTo(posicoes['serverOk'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.moveTo(posicoes['id'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.write(self.login, interval = 0.1)
+            pyautogui.moveTo(posicoes['senha'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.write(self.senha, interval = 0.1)
+            pyautogui.moveTo(posicoes['conectar'],duration = 0.25)
+            pyautogui.click()
         
-        if():
-            self.logado = True
 
-    def fechar(self,posicoes{}):
-        self.logado = False
+    def fecharJogo(self,posicoes):
+        if self.logado:
+            print('fechando jogo')
+            pyautogui.moveTo(posicoes['menu'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.moveTo(posicoes['fecharJogo'],duration = 0.25)
+            pyautogui.click()
+            self.logado(False)
+        else:
+            print('nao foi possivel fechar o jogo, pois a conta nao esta logada!')
 
-    def selectChar(self):
-
-    def selectServer:
-        self.logado = False
-
+    def selecaoPersonagem(self,posicoes):
+        if self.logado:
+            print('selecionando personagem')
+            pyautogui.moveTo(posicoes['menu'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.moveTo(posicoes['selectChar'],duration = 0.25)
+            pyautogui.click()
+        else:
+            print('nao foi possivel selecionar personagem, pois a conta nao esta logada!')
+        
+    def selecionarServidor(self,posicoes):
+        if self.logado:
+            print('selecionando servidor')
+            pyautogui.moveTo(posicoes['menu'],duration = 0.25)
+            pyautogui.click()
+            pyautogui.moveTo(posicoes['logOut'],duration = 0.25)
+            pyautogui.click()
+            self.logado(False)
+        else:
+            print('nao foi possivel deslogar, pois a conta nao esta logada!')
+            
+    def selecionarPersonagem():
+        pyautogui.press('\n')
