@@ -5,11 +5,11 @@ class Conta:
         self.login = login
         self.senha = senha
         self.logado = False
-    def logar(self):
+    def logar(self,posicoes{}):
         if():
             self.logado = True
 
-    def fechar(self):
+    def fechar(self,posicoes{}):
         self.logado = False
 
     def selectChar(self):

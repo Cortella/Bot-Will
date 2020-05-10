@@ -10,7 +10,7 @@ Created on Wed Jan 29 21:30:46 2020
 import pyautogui
 import time
 
-time.sleep(2)
+time.sleep(10)
 
 print(pyautogui.position())
 

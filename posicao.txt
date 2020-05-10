@@ -18,3 +18,6 @@ autoRange,692,580
 autoIniciar,691,613
 autoFinalizar,749,609
 voltarAqui,103,169
+barraPesquisa,155,936
+tecladoVirtual,636,494
+sim,
