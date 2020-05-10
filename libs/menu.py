@@ -1,8 +1,23 @@
-def menu():
+def instrucoes():
     print('Incialmente cretifique-se que sua resolucao esta configurada para 1366x768.')
     print('O bot funciona a partir de um mapeamento de tela idetificando posicoes',end="")
     print(' dos pixels e definindo o controle do mouse , por isso caso sua resolucao nao seja ',end="")
     print('a especificada WIll nao podera ajuda-lo')
+    print()
+    print('Instrucoes: ')
+    print()
+    print('1 -  Abra tanto o jogo como o script como ADMINSTRADOR')
+    print('2 -  Posicione o teclado virtual conforme a imagem em libs')
+    print('3 -  Posicione seus personagens no inicio da floresta, apenas teleporte NAO ANDE')
+    print('4 -  E interessante que seu personagem tenha x de velocidade de movimento')
+    print('5 -  No atalho de 1 coloque Furia')
+    print('6 -  No atalho de 2 coloque lamina')
+    print('7 -  No atalho de 3 coloque pocao vermelha')
+    print('8 -  No atalho de 4 coloque pocao azul')
+    print('9 -  Voce deve pegar as quests apos as 21:00 todos os dias com cada personagem e coloca-los no ponto inicial')
+    print('10 - Certifique-se de que nunhum programa ira abrir e sobrepor a tela, caso isso ocorra o script nao ira funcionar')
+def menu():
+    
     print('------------------------------------------------------------------')
     print('Digite a Opcao desejada: \n')
     print('1 - Farmar tecidos')

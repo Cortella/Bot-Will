@@ -1,11 +1,37 @@
 import pyautogui
 class Conta:
 
-    def __init__(self, login, senha):
-        self.login = login
-        self.senha = senha
-        self.logado = False
-    def logar(self,posicoes{}):
+    def __init__(self, login, senha, personagens):
+        self.__login = login
+        self.__senha = senha
+        self._logado = False
+        self._personagens = personagens
+        
+        
+    @property
+    def login(self):
+        return __login
+    
+    @property
+    def senha(self):
+        return __senha
+    
+    @property
+    def logado(self):
+        return _logado
+    
+    @property
+    def personagens(self):
+        return personagens_
+    
+    @_logado.setter
+    def logado(self,status):
+        if isinstance(status,bool):
+            self._preco = valor
+        
+        
+    def logar(self,posicoes):
+        
         if():
             self.logado = True
 

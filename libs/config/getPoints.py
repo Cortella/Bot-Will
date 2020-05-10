@@ -10,8 +10,9 @@ Created on Wed Jan 29 21:30:46 2020
 import pyautogui
 import time
 
-time.sleep(10)
+time.sleep(3)
 
 print(pyautogui.position())
+pyautogui.press('\n')
 
 
