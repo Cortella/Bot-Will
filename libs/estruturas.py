@@ -19,3 +19,15 @@ def get_posicoes():
         return posicoes
 
 
+def get_contas():
+    contas = {}
+    try:  
+        with open('Protected/contas.txt','r') as arquivo:        
+            for linha in arquivo:
+                cortado = linha.split(',')
+                contas[cortado[0]] = cortado[1]
+            arquivo.close()
+    except IOError:
+        print('O arquivo nao existe no diretorio ou nao foi reconhecido')
+    else:
+        return contas

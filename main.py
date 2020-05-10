@@ -1,10 +1,11 @@
 
 import time
 from libs.estruturas import get_posicoes
+from libs.estruturas import get_contas
 
-posicoes = get_posicoes()
+contas = get_contas()
 time.sleep(2)
-print(posicoes['posicao1'])
+print(contas)
         
 
 
